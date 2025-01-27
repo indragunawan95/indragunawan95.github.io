@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sent! - Indra Gunawan Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/character.svg">
+    <link rel="alternate icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pixel-black: #181818;
+            --pixel-white: #e0e0e0;
+            --pixel-green: #40ff00;
+            --pixel-blue: #4040ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        body {
+            background-color: var(--pixel-black);
+            color: var(--pixel-white);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .thanks-container {
+            border: 4px solid var(--pixel-white);
+            padding: 40px;
+            max-width: 600px;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .corner {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: var(--pixel-green);
+        }
+
+        .top-left { top: -4px; left: -4px; }
+        .top-right { top: -4px; right: -4px; }
+        .bottom-left { bottom: -4px; left: -4px; }
+        .bottom-right { bottom: -4px; right: -4px; }
+
+        h1 {
+            color: var(--pixel-green);
+            margin-bottom: 30px;
+            font-size: 1.5em;
+        }
+
+        p {
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .success-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite;
+        }
+
+        .back-button {
+            background-color: var(--pixel-green);
+            border: 4px solid var(--pixel-white);
+            color: var(--pixel-black);
+            padding: 15px 30px;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .pixel-arrow {
+            display: inline-block;
+            animation: blink 1s infinite;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="thanks-container">
+        <div class="corner top-left"></div>
+        <div class="corner top-right"></div>
+        <div class="corner bottom-left"></div>
+        <div class="corner bottom-right"></div>
+        
+        <div class="success-icon">🎮</div>
+        <h1>MESSAGE SENT!</h1>
+        <p>Thank you for reaching out! I'll get back to you as soon as possible.</p>
+        <a href="index.html" class="back-button">
+            <span class="pixel-arrow">◄</span>
+            RETURN TO HOME
+        </a>
+    </div>
+</body>
+</html> 

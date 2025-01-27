@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indra Gunawan Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/character.svg">
+    <link rel="alternate icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <div class="health-bar">
+                <div class="health-fill"></div>
+            </div>
+            <nav class="game-menu">
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="game-world">
+            <section id="about" class="game-section">
+                <div class="about-container">
+                    <div class="profile-frame">
+                        <img id="profile-image" src="./assets/default-avatar.jpeg" alt="Your Professional Photo">
+                        <div class="frame-corner top-left"></div>
+                        <div class="frame-corner top-right"></div>
+                        <div class="frame-corner bottom-left"></div>
+                        <div class="frame-corner bottom-right"></div>
+                    </div>
+                    <div class="about-content">
+                        <div class="text-box">
+                            <h1>Indra Gunawan</h1>
+                            <p class="typewriter">Software Engineer on a mission to create amazing digital experiences!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="game-section">
+                <h2>SKILLS</h2>
+                <div class="skill-categories">
+                    <div class="skill-category">
+                        <h3>⚡ Technologies</h3>
+                        <div class="skill-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">🐳</div>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🔮</div>
+                                <span>GraphQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">📨</div>
+                                <span>Kafka</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">⚡</div>
+                                <span>Redis</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🗄️</div>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>��️ Programming</h3>
+                        <div class="skill-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">📘</div>
+                                <span>TypeScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">💫</div>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">💎</div>
+                                <span>Elixir</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🐹</div>
+                                <span>Go</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>☁️ Cloud</h3>
+                        <div class="skill-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">⚓</div>
+                                <span>Kubernetes</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">☁️</div>
+                                <span>AWS</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🌩️</div>
+                                <span>GCP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>📚 Libraries</h3>
+                        <div class="skill-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">🪺</div>
+                                <span>Nest.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">⏭️</div>
+                                <span>Next.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🔷</div>
+                                <span>Prisma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="game-section">
+                <h2>QUESTS COMPLETED</h2>
+                <!-- <div class="project-grid">
+                    <a href="https://your-project-url-1.com" target="_blank" class="project-card">
+                        <div class="project-icon">🎮</div>
+                        <h3>Project Name 1</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <p>A brief description of your amazing project goes here. What problems did it solve?</p>
+                        <div class="project-link">
+                            <span class="pixel-arrow">►</span> VISIT PROJECT
+                        </div>
+                    </a>
+
+                    <a href="https://your-project-url-2.com" target="_blank" class="project-card">
+                        <div class="project-icon">🤖</div>
+                        <h3>Project Name 2</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <p>Another cool project description. What makes this project special?</p>
+                        <div class="project-link">
+                            <span class="pixel-arrow">►</span> VISIT PROJECT
+                        </div>
+                    </a>
+
+                    <a href="https://your-project-url-3.com" target="_blank" class="project-card">
+                        <div class="project-icon">📱</div>
+                        <h3>Project Name 3</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                        <p>Describe another fantastic project. What technical challenges did you overcome?</p>
+                        <div class="project-link">
+                            <span class="pixel-arrow">►</span> VISIT PROJECT
+                        </div>
+                    </a>
+                </div> -->
+            </section>
+
+            <section id="contact" class="game-section">
+                <h2>SEND MESSAGE</h2>
+                <form class="contact-form" action="https://formsubmit.co/tudeindragunawan@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <input type="hidden" name="_next" value="thanks.html">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact!">
+                    <button type="submit" class="pixel-button">
+                        <span class="button-text">SEND</span>
+                        <span class="button-loading" style="display: none;">SENDING...</span>
+                    </button>
+                </form>
+                <div id="form-success" class="form-message success" style="display: none;">
+                    Message sent successfully! ��
+                </div>
+                <div id="form-error" class="form-message error" style="display: none;">
+                    Oops! Something went wrong. Please try again. ⚠️
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
